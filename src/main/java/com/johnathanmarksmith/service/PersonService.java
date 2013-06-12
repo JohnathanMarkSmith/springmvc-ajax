@@ -8,8 +8,8 @@ import com.johnathanmarksmith.domain.Person;
  * Email:  johnathansmith1969@gmail.com
  * <p/>
  * Comments:
- *
- *   This is the interface to the person service.
+ * <p/>
+ * This is the interface to the person service.
  */
 
 

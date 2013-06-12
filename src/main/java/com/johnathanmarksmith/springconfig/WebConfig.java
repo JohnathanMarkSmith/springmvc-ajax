@@ -14,8 +14,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  * Email:  johnathansmith1969@gmail.com
  * <p/>
  * Comments:
- *
- *     This is my configuration. I dont like using XML anymore thats old school.
+ * <p/>
+ * This is my configuration. I dont like using XML anymore thats old school.
  */
 
 
@@ -28,22 +28,24 @@ public class WebConfig extends WebMvcConfigurerAdapter
     /**
      * Since we don't have any controller logic for the home screen we simpler
      * to just define controller for page using View Controller.
-     *
+     * <p/>
      * Note: had to extend WebMvcConfigurerAdapter to get this functionality
      *
-	 * @param registry
-	 */
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/").setViewName("home");
-	}
-	
-	@Bean
-	public InternalResourceViewResolver viewResolver() {
-		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/view/");
-		resolver.setSuffix(".jsp");
-		return resolver;
-	}
-	
+     * @param registry
+     */
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry)
+    {
+        registry.addViewController("/").setViewName("home");
+    }
+
+    @Bean
+    public InternalResourceViewResolver viewResolver()
+    {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/WEB-INF/view/");
+        resolver.setSuffix(".jsp");
+        return resolver;
+    }
+
 }

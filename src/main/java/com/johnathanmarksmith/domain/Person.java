@@ -7,8 +7,8 @@ package com.johnathanmarksmith.domain;
  * Email:  johnathansmith1969@gmail.com
  * <p/>
  * Comments:
- *
- *    This is the domain/model Person object that we use
+ * <p/>
+ * This is the domain/model Person object that we use
  */
 
 
@@ -28,18 +28,21 @@ public class Person
         this.name = name;
     }
 
-    public Integer getAge() {
-		return age;
-	}
+    public Integer getAge()
+    {
+        return age;
+    }
 
-	public void setAge(Integer age) {
-		this.age = age;
-	}
+    public void setAge(Integer age)
+    {
+        this.age = age;
+    }
 
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + "]";
-	}
-	
-	
+    @Override
+    public String toString()
+    {
+        return "Person [name=" + name + ", age=" + age + "]";
+    }
+
+
 }
